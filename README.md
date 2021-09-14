@@ -1,12 +1,10 @@
-# Team Name
+# Team Kim
 
-Project description (~1 paragraph)
+A 3D automobile configurator with options such as colors, seat materials, rim types that also has the ability of taking to car around for a demo ride - almost like a game.
 
 ## Team Members and Roles
 
-* Member 1 (Role 1, Role 2)
-* Member 2 (Role 3, Role 4)
-* Member 3 (Role 5, Role 6)
+* Taeyong Kim (The whole team)
 
 ## Prerequisites
 
