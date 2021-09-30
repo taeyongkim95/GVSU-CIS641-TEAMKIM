@@ -9,9 +9,9 @@ It will have customization options for features such as color, seat materials an
 
 # Anticipated Technologies
 
-Unity Engine
-VS Studio
-Blender (if I have to to edit some of the models)
+* Unity Engine
+* VS Studio
+* Blender (if I have to to edit some of the models)
 # Method/Approach
 
 * Acquire free graphical assets to use for the project (Car model with sufficient fidelity and parts breakdown, objects for racetrack)
