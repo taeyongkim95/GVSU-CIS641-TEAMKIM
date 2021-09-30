@@ -12,6 +12,7 @@ A 3D automobile configurator with options such as colors, seat materials, rim ty
 
 ### Docs
 [Project Proposal](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/docs/proposal.md)
+
 [Software Requirements Specification](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/docs/software_requirements_specification.md)
 
 ### Meetings
