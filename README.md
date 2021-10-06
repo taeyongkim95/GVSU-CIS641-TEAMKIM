@@ -15,6 +15,10 @@ A 3D automobile configurator with options such as colors, seat materials, rim ty
 
 [Software Requirements Specification](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/docs/software_requirements_specification.md)
 
+
+### Trello Board
+[Trello](https://trello.com/b/8Teh1448/cis-641-term-project)
+
 ### Meetings
 [Meetings](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/tree/master/meetings)
 
