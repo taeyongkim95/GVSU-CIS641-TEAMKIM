@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Freelook Camera
   - CarBody
+  - Price
   layers:
   - Default
   - TransparentFX
