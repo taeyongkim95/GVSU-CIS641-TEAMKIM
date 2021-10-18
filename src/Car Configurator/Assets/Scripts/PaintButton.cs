@@ -7,12 +7,8 @@ public class PaintButton : CustomButton
     [SerializeField]
     private GameObject carBody;
 
-    void Start()
-    {
-        carBody = GameObject.FindGameObjectsWithTag("CarBody")[0];
-    }
-
-    public void setCarMaterial(Material paintMat) {
+    public void SetCarMaterial(Material paintMat) {
         carBody.GetComponent<MeshRenderer>().material = paintMat;
+        carBody.GetComponent<MeshRenderer>().material.SetFloat("_Metallic", GlossySlider.glossyVal);
     }
 }

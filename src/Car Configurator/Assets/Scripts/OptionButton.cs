@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class OptionButton : CustomButton
 {
-    void Start()
+    public void UpdatePrice()
     {
-        
-    }
 
-    void Update()
-    {
-        
     }
 }

@@ -12,7 +12,7 @@ public class CustomButton : MonoBehaviour
     {
     }
 
-    private void updatePrice()
+    public void updatePrice()
     {
         priceText.text = "ok";
     }
