@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class PriceManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private double totalPrice;
+    [SerializeField]
+    private TextMeshProUGUI priceText;
+
     void Start()
     {
-        
+        totalPrice = 55000;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        priceText.text = "Price: $ " + totalPrice;
+    }
+
+    void addPrice(double valueToAdd)
+    {
+        totalPrice = totalPrice + valueToAdd;
     }
 }

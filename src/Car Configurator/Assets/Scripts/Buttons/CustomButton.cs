@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OptionButton : CustomButton
+public class CustomButton : MonoBehaviour
 {
-    public void UpdatePrice()
-    {
-
-    }
+    public double price;
 }

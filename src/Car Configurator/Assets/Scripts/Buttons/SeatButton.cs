@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SeatButton : MonoBehaviour
+public class SeatButton : CustomButton
 {
     [SerializeField]
     private GameObject carSeat;
