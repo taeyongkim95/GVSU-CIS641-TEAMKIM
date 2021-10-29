@@ -14,4 +14,17 @@ public class RimButton : CustomButton
             rims.GetComponent<MeshRenderer>().material = rimMat;
         }
     }
+
+    new public void toggleSelected()
+    {
+        GameObject[] allRimButtons = GameObject.FindGameObjectsWithTag("RimSwatch");
+        foreach (GameObject button in allRimButtons)
+        {
+            button.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            button.GetComponent<RimButton>().isSelected = false;
+        }
+
+        this.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+        this.isSelected = true;
+    }
 }

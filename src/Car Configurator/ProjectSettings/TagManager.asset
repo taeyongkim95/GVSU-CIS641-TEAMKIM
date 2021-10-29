@@ -8,6 +8,9 @@ TagManager:
   - CarBody
   - Price
   - Dashboard
+  - PaintSwatch
+  - SeatSwatch
+  - RimSwatch
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - UI_2
   - 
   - 
   - 

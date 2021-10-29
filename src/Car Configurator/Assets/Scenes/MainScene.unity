@@ -429,6 +429,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1775499411}
     m_Modifications:
+    - target: {fileID: 1914070398781692393, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: b8aff1ca3117a2b43aedfe829b696349, type: 2}
+    - target: {fileID: 1914070398781692393, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143800, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_Name
       value: Paint_GreenSwatch
@@ -447,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143803, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143803, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -541,6 +549,10 @@ PrefabInstance:
       propertyPath: car
       value: 
       objectReference: {fileID: 1121384033}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: price
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: carBody
       value: 
@@ -715,6 +727,10 @@ PrefabInstance:
       propertyPath: car
       value: 
       objectReference: {fileID: 1121384033}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: price
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: carBody
       value: 
@@ -1430,6 +1446,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1121384033}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: price
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: carBody
       value: 
       objectReference: {fileID: 1121384033}
@@ -1455,6 +1475,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1775499411}
     m_Modifications:
+    - target: {fileID: 1914070398781692393, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: c35c7d5e33766674d8a3e2078892b059, type: 2}
+    - target: {fileID: 3863470795310390167, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143800, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_Name
       value: Paint_BlackSwatch
@@ -1574,11 +1602,23 @@ PrefabInstance:
     - target: {fileID: 3936433976809143805, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_Material
       value: 
-      objectReference: {fileID: 2100000, guid: f7e4d4002742ca346820fc30cd1411de, type: 2}
+      objectReference: {fileID: 2100000, guid: c35c7d5e33766674d8a3e2078892b059, type: 2}
+    - target: {fileID: 7116739421387499371, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7116739421387499371, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: car
       value: 
       objectReference: {fileID: 1121384033}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: price
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: carBody
       value: 
@@ -1591,6 +1631,10 @@ PrefabInstance:
       propertyPath: priceText
       value: 
       objectReference: {fileID: 37394825}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: isSelected
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: thisButton
       value: 
@@ -2706,7 +2750,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27d28517bf202674fa64c029113f709f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  priceText: {fileID: 0}
+  price: 0
+  isSelected: 0
 --- !u!1 &1418145512
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,21 +3029,53 @@ PrefabInstance:
     m_TransformParent: {fileID: 816737402}
     m_Modifications:
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1459485540}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1459485540}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetRimMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: toggleSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: RimButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RimButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 2100000, guid: 91cf7f716a8eb5e43af2f33b64769d79, type: 2}
+      objectReference: {fileID: 2100000, guid: 52410dffaca855343bdac7f5595c763c, type: 2}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: price
+      value: 450
+      objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: priceText
       value: 
@@ -3022,6 +3099,10 @@ PrefabInstance:
     - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Name
       value: Rim_BlackSwatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_TagString
+      value: RimSwatch
       objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944102, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Pivot.x
@@ -3089,7 +3170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944102, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944102, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3109,15 +3190,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7222121208103029651, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 0.14901961
       objectReference: {fileID: 0}
     - target: {fileID: 7222121208103029651, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Color.g
-      value: 0.5803922
+      value: 0.121568635
       objectReference: {fileID: 0}
     - target: {fileID: 7222121208103029651, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Color.r
-      value: 0.6
+      value: 0.10588236
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b36351e54f98a6e41822e19281610765, type: 3}
@@ -3303,7 +3384,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494372832}
-  m_LocalRotation: {x: 0.05170821, y: 0.8037752, z: -0.35719302, w: 0.4729534}
+  m_LocalRotation: {x: 0.051708214, y: 0.80377525, z: -0.35719302, w: 0.4729534}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3405,6 +3486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae86bd5e088bac4a9bc1fc2306985a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  priceText: {fileID: 37394825}
 --- !u!1 &1654288718
 GameObject:
   m_ObjectHideFlags: 3
@@ -3748,21 +3830,53 @@ PrefabInstance:
     m_TransformParent: {fileID: 816737402}
     m_Modifications:
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1729935757}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1729935757}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetRimMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: toggleSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: RimButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RimButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2100000, guid: 91cf7f716a8eb5e43af2f33b64769d79, type: 2}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: price
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: priceText
       value: 
@@ -3786,6 +3900,10 @@ PrefabInstance:
     - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Name
       value: Rim_GoldSwatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_TagString
+      value: RimSwatch
       objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944102, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Pivot.x
@@ -3930,8 +4048,8 @@ RectTransform:
   m_Children:
   - {fileID: 540421637}
   - {fileID: 378651329}
-  - {fileID: 38930400}
   - {fileID: 1504455618}
+  - {fileID: 38930400}
   - {fileID: 187552266}
   - {fileID: 327500399}
   - {fileID: 1434986806}
@@ -4043,6 +4161,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1884535403}
     m_Modifications:
+    - target: {fileID: 43630185947054857, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 420698764160445625, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -4070,6 +4192,10 @@ PrefabInstance:
     - target: {fileID: 420698764160445628, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_Name
       value: Seat_BlackSwatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 420698764160445628, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_TagString
+      value: SeatSwatch
       objectReference: {fileID: 0}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4172,6 +4298,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262731609104717805, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: price
+      value: 799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262731609104717805, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: carSeat
       value: 
       objectReference: {fileID: 2114415967}
@@ -4258,7 +4388,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862536919}
-  m_LocalRotation: {x: 0.10989836, y: 0.87581044, z: -0.23724344, w: 0.4057019}
+  m_LocalRotation: {x: 0.10989834, y: 0.87581044, z: -0.23724344, w: 0.4057019}
   m_LocalPosition: {x: -6.1022496, y: 5, z: 5.173252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4610,9 +4740,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Seat_GraySwatch
       objectReference: {fileID: 0}
+    - target: {fileID: 420698764160445628, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_TagString
+      value: SeatSwatch
+      objectReference: {fileID: 0}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -4623,12 +4757,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3708602780915837087}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 3708602780915837087}
+    - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetSeatMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: toggleSelected
       objectReference: {fileID: 0}
     - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4642,6 +4784,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2100000, guid: fb8ff69351a2cd44596311aa9afc08f3, type: 2}
+    - target: {fileID: 420698764160445630, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 420698764160445631, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4727,6 +4873,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8262731609104717805, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: price
+      value: 700
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262731609104717805, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
       propertyPath: carSeat
       value: 
       objectReference: {fileID: 2114415967}
@@ -4734,6 +4884,10 @@ PrefabInstance:
       propertyPath: priceText
       value: 
       objectReference: {fileID: 37394825}
+    - target: {fileID: 8262731609104717805, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
+      propertyPath: isSelected
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccf449bd7e7c7a64a820251a6f84e648, type: 3}
 --- !u!114 &3708602780915837087 stripped
@@ -4759,6 +4913,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1775499411}
     m_Modifications:
+    - target: {fileID: 501313338218164722, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1914070398781692393, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: d796cd947be0fc341aeee42ba0f62719, type: 2}
     - target: {fileID: 3936433976809143800, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_Name
       value: Paint_BlueSwatch
@@ -4777,7 +4939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143803, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3936433976809143803, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4867,10 +5029,22 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: 368c6b385e809674e9e36e5f220fc8c6, type: 2}
+    - target: {fileID: 7116739421387499371, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934152340124030240, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: car
       value: 
       objectReference: {fileID: 1121384033}
+    - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
+      propertyPath: price
+      value: 550
+      objectReference: {fileID: 0}
     - target: {fileID: 8623157159190568859, guid: e4531bdc30ff3fc44bef5260802147bb, type: 3}
       propertyPath: carBody
       value: 
@@ -4893,25 +5067,65 @@ PrefabInstance:
     m_TransformParent: {fileID: 816737402}
     m_Modifications:
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1307679999}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1307679999}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SetRimMat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: toggleSelected
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: RimButton, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: RimButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 2100000, guid: 8974c888e3e1363488e79b1f2d84c1d1, type: 2}
+    - target: {fileID: 1899166289637492290, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2679125457714598061, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: price
+      value: 350
+      objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: priceText
       value: 
       objectReference: {fileID: 37394825}
+    - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: isSelected
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944100, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: carRims.Array.data[0]
       value: 
@@ -4931,6 +5145,10 @@ PrefabInstance:
     - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Name
       value: Rim_ChromeSwatch
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974634282017944101, guid: b36351e54f98a6e41822e19281610765, type: 3}
+      propertyPath: m_TagString
+      value: RimSwatch
       objectReference: {fileID: 0}
     - target: {fileID: 4974634282017944102, guid: b36351e54f98a6e41822e19281610765, type: 3}
       propertyPath: m_Pivot.x
