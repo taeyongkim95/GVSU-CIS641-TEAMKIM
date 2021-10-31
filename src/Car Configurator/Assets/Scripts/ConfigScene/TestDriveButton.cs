@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class TestDriveButton : CustomButton
-{
+public class TestDriveButton : MonoBehaviour
+{ 
     void Start()
     {
-        
     }
 
     public void StartDrive()
     {
-        Debug.Log("ok");
-    }
+        SceneManager.LoadScene("DriveScene");
+    }    
 }
