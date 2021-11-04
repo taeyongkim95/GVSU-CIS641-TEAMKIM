@@ -8,8 +8,7 @@ public class PaintButton : CustomButton
     private GameObject carBody;
 
     public void SetCarMaterial(Material paintMat) {
-        carBody.GetComponent<MeshRenderer>().material = paintMat;
-        carBody.GetComponent<MeshRenderer>().material.SetFloat("_Metallic", GlossySlider.glossyVal);
+        CarDataManager.instance._paintMat = paintMat;
     }
 
     new public void toggleSelected()

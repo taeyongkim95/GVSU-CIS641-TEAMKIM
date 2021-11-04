@@ -11,7 +11,6 @@ public class GlossySlider : MonoBehaviour
 
     public void SetGlossyValue(float newVal)
     {
-        carBody.GetComponent<MeshRenderer>().material.SetFloat("_Metallic", newVal);
-        glossyVal = newVal;
+        CarDataManager.instance._glossyVal = newVal;
     }
 }

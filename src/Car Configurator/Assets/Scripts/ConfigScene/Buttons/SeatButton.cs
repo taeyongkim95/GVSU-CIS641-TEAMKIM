@@ -9,7 +9,7 @@ public class SeatButton : CustomButton
 
     public void SetSeatMat(Material dashMat)
     {
-        carSeat.GetComponent<MeshRenderer>().material = dashMat;
+        CarDataManager.instance._seatMat = dashMat;
     }
 
     new public void toggleSelected()

@@ -9,10 +9,7 @@ public class RimButton : CustomButton
 
     public void SetRimMat(Material rimMat)
     {
-        foreach(GameObject rims in carRims)
-        {
-            rims.GetComponent<MeshRenderer>().material = rimMat;
-        }
+        CarDataManager.instance._rimMat = rimMat;
     }
 
     new public void toggleSelected()
