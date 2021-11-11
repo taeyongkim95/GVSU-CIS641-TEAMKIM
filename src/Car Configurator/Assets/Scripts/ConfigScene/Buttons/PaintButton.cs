@@ -16,11 +16,11 @@ public class PaintButton : CustomButton
         GameObject[] allPaintButtons = GameObject.FindGameObjectsWithTag("PaintSwatch");
         foreach(GameObject button in allPaintButtons)
         {
-            button.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            button.transform.GetChild(0).gameObject.SetActive(false);
             button.GetComponent<PaintButton>().isSelected = false;
         }
 
-        this.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+        this.transform.GetChild(0).gameObject.SetActive(true);
         this.isSelected = true;
     }
 }

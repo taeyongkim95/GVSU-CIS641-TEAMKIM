@@ -17,11 +17,11 @@ public class SeatButton : CustomButton
         GameObject[] allSeatButtons = GameObject.FindGameObjectsWithTag("SeatSwatch");
         foreach (GameObject button in allSeatButtons)
         {
-            button.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(false);
+            button.transform.GetChild(0).gameObject.SetActive(false);
             button.GetComponent<SeatButton>().isSelected = false;
         }
 
-        this.transform.GetChild(0).transform.GetChild(0).gameObject.SetActive(true);
+        this.transform.GetChild(0).gameObject.SetActive(true);
         this.isSelected = true;
     }
 }
