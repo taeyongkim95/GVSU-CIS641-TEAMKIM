@@ -11,6 +11,7 @@ public class CarControllerV2 : MonoBehaviour
     private float horizontalInput;
 
     public float speed = 20;
+    public float turnSpeed = 5;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +24,8 @@ public class CarControllerV2 : MonoBehaviour
     {
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
+
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
     }
 }

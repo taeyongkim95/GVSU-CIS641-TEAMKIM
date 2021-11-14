@@ -5,10 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class DriveManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject car;
+
+    public Vector3 cameraOffset;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -18,5 +23,10 @@ public class DriveManager : MonoBehaviour
         {
             SceneManager.LoadScene("ConfigScene");
         }
+    }
+
+    void LateUpdate()
+    {
+        //transform.position = car.transform.position + cameraOffset;
     }
 }
