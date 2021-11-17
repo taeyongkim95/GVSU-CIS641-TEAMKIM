@@ -12,7 +12,7 @@ public class SeatButton : CustomButton
         CarDataManager.instance._seatMat = dashMat;
     }
 
-    new public void toggleSelected()
+    new public void ToggleSelected()
     {
         GameObject[] allSeatButtons = GameObject.FindGameObjectsWithTag("SeatSwatch");
         foreach (GameObject button in allSeatButtons)

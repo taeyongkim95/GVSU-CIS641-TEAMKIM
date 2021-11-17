@@ -13,7 +13,7 @@ public class FreeLookCamera : MonoBehaviour
         freeLookComponent = freeLookCamera.GetComponent<CinemachineFreeLook>();
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (Input.GetMouseButtonDown(1))
         {

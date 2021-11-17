@@ -11,7 +11,7 @@ public class PaintButton : CustomButton
         CarDataManager.instance._paintMat = paintMat;
     }
 
-    new public void toggleSelected()
+    new public void ToggleSelected()
     {
         GameObject[] allPaintButtons = GameObject.FindGameObjectsWithTag("PaintSwatch");
         foreach(GameObject button in allPaintButtons)

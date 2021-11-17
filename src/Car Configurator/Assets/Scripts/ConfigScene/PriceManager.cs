@@ -15,10 +15,10 @@ public class PriceManager : MonoBehaviour
 
     void Start()
     {
-        updatePrice();
+        UpdatePrice();
     }
 
-    private double getPaintPrice()
+    private double GetPaintPrice()
     {
         GameObject[] allPaintButtons = GameObject.FindGameObjectsWithTag("PaintSwatch");
         foreach(GameObject button in allPaintButtons)
@@ -32,7 +32,7 @@ public class PriceManager : MonoBehaviour
         return paintPrice;
     }
 
-    private double getSeatPrice()
+    private double GetSeatPrice()
     {
         GameObject[] allSeatButtons = GameObject.FindGameObjectsWithTag("SeatSwatch");
         foreach (GameObject button in allSeatButtons)
@@ -46,7 +46,7 @@ public class PriceManager : MonoBehaviour
         return seatPrice;
     }
 
-    private double getRimPrice()
+    private double GetRimPrice()
     {
         GameObject[] allRimButtons = GameObject.FindGameObjectsWithTag("RimSwatch");
         foreach (GameObject button in allRimButtons)
@@ -62,12 +62,12 @@ public class PriceManager : MonoBehaviour
 
     void Update()
     {
-        updatePrice();
+        UpdatePrice();
         priceText.text = "Price: $ " + totalPrice;
     }
 
-    public void updatePrice()
+    public void UpdatePrice()
     {
-        totalPrice = 54000 + getPaintPrice() + getSeatPrice() + getRimPrice();
+        totalPrice = 54000 + GetPaintPrice() + GetSeatPrice() + GetRimPrice();
     }
 }

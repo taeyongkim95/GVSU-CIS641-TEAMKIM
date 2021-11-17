@@ -12,7 +12,7 @@ public class RimButton : CustomButton
         CarDataManager.instance._rimMat = rimMat;
     }
 
-    new public void toggleSelected()
+    new public void ToggleSelected()
     {
         GameObject[] allRimButtons = GameObject.FindGameObjectsWithTag("RimSwatch");
         foreach (GameObject button in allRimButtons)
