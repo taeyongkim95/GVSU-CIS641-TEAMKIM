@@ -6,15 +6,18 @@ using TMPro;
 
 public class PriceManager : MonoBehaviour
 {
-    private double paintPrice;
-    private double seatPrice;
-    private double rimPrice;
-    private double totalPrice;
+    public double basePrice;
+    public double paintPrice;
+    public double seatPrice;
+    public double rimPrice;
+    public double totalPrice;
+
     [SerializeField]
     private TextMeshProUGUI priceText;
 
     void Start()
     {
+        basePrice = 54000;
         UpdatePrice();
     }
 
@@ -68,6 +71,6 @@ public class PriceManager : MonoBehaviour
 
     public void UpdatePrice()
     {
-        totalPrice = 54000 + GetPaintPrice() + GetSeatPrice() + GetRimPrice();
+        totalPrice = basePrice + GetPaintPrice() + GetSeatPrice() + GetRimPrice();
     }
 }

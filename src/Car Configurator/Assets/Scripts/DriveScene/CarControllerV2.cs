@@ -5,6 +5,9 @@ using UnityEngine;
 public class CarControllerV2 : MonoBehaviour
 {
     [SerializeField]
+    private GameObject carObject;
+
+    [SerializeField]
     private GameObject[] wheelObjects;
 
     private float verticalInput;
@@ -16,7 +19,7 @@ public class CarControllerV2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        carObject = GameObject.FindGameObjectsWithTag("Player")[0];
     }
 
     // Update is called once per frame
@@ -25,7 +28,7 @@ public class CarControllerV2 : MonoBehaviour
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
 
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
-        transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+        carObject.transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        carObject.transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
     }
 }

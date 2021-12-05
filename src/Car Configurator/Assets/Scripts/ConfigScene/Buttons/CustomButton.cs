@@ -7,8 +7,20 @@ public class CustomButton : MonoBehaviour
     public double price;
     public bool isSelected;
 
-    public void ToggleSelected()
+    private CheckoutManager checkoutScript;
+
+    void Awake()
     {
-        //child classes
+        GameObject checkoutObject = GameObject.Find("CheckoutPanel");
+        checkoutScript = checkoutObject.GetComponent<CheckoutManager>();
+    }
+
+    public void UpdatePriceCalculation()
+    {
+        checkoutScript.UpdatePrices();
+    }
+
+    public void ToggleSelected() { 
+    //Child classes
     }
 }

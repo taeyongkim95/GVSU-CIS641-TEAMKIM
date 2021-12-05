@@ -2,18 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class DriveManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject car;
+    private GameObject carObject;
 
-    public Vector3 cameraOffset;
+    public CinemachineVirtualCamera CinemachineVirtualCameraBase;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        carObject = GameObject.FindGameObjectsWithTag("Player")[0];
+        CinemachineVirtualCameraBase.Follow = carObject.transform;
+        CinemachineVirtualCameraBase.LookAt = carObject.transform;
     }
 
     // Update is called once per frame
