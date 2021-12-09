@@ -52,4 +52,3 @@ public class CheckoutManager : MonoBehaviour
         totalPriceText.text = "Total Price: $ " + priceScript.totalPrice;
     }
 }
-z

@@ -9,14 +9,18 @@ public class DriveManager : MonoBehaviour
     [SerializeField]
     private GameObject carObject;
 
-    public CinemachineVirtualCamera CinemachineVirtualCameraBase;
+    public CinemachineVirtualCamera cinemachineVirtualCamera;
+
+    public CinemachineTransposer cameraBase;
 
     // Start is called before the first frame update
     void Start()
     {
         carObject = GameObject.FindGameObjectsWithTag("Player")[0];
-        CinemachineVirtualCameraBase.Follow = carObject.transform;
-        CinemachineVirtualCameraBase.LookAt = carObject.transform;
+        cinemachineVirtualCamera.Follow = carObject.transform;
+        cinemachineVirtualCamera.LookAt = carObject.transform;
+
+        cameraBase = cinemachineVirtualCamera.GetCinemachineComponent<CinemachineTransposer>();
     }
 
     // Update is called once per frame
@@ -26,10 +30,15 @@ public class DriveManager : MonoBehaviour
         {
             SceneManager.LoadScene("ConfigScene");
         }
-    }
 
-    void LateUpdate()
-    {
-        //transform.position = car.transform.position + cameraOffset;
+        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        {
+            cameraBase.m_FollowOffset = new Vector3(-2.5f, 1.0f, -2.0f);
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftAlt))
+        {
+            cameraBase.m_FollowOffset = new Vector3(0f, 2.0f, -3.5f);
+        }
     }
 }

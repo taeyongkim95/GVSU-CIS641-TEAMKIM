@@ -67,6 +67,11 @@ public class PriceManager : MonoBehaviour
     {
         UpdatePrice();
         priceText.text = "Price: $ " + totalPrice;
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     public void UpdatePrice()

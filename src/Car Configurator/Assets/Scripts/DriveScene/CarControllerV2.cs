@@ -8,7 +8,7 @@ public class CarControllerV2 : MonoBehaviour
     private GameObject carObject;
 
     [SerializeField]
-    private GameObject[] wheelObjects;
+    private List<GameObject> wheelObjects = new List<GameObject>();
 
     private float verticalInput;
     private float horizontalInput;
@@ -20,6 +20,11 @@ public class CarControllerV2 : MonoBehaviour
     void Start()
     {
         carObject = GameObject.FindGameObjectsWithTag("Player")[0];
+
+        foreach (GameObject wheel in GameObject.FindGameObjectsWithTag("Wheels"))
+        {
+            wheelObjects.Add(wheel);
+        }
     }
 
     // Update is called once per frame
@@ -30,5 +35,10 @@ public class CarControllerV2 : MonoBehaviour
 
         carObject.transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
         carObject.transform.Rotate(Vector3.up, turnSpeed * horizontalInput * Time.deltaTime);
+
+        foreach (GameObject wheel in wheelObjects)
+        {
+            wheel.transform.Rotate(-(Time.deltaTime * speed * verticalInput * 30) , 0, 0);
+        }
     }
 }

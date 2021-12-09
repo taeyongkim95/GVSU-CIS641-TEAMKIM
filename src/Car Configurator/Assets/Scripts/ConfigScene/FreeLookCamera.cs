@@ -8,9 +8,15 @@ public class FreeLookCamera : MonoBehaviour
     [SerializeField] GameObject freeLookCamera;
     private CinemachineFreeLook freeLookComponent;
 
+    [SerializeField]
+    private GameObject carObject;
+
     private void Awake()
     {
         freeLookComponent = freeLookCamera.GetComponent<CinemachineFreeLook>();
+        carObject = GameObject.FindGameObjectsWithTag("Player")[0];
+        freeLookComponent.Follow = carObject.transform;
+        freeLookComponent.LookAt = carObject.transform;
     }
 
     private void LateUpdate()
