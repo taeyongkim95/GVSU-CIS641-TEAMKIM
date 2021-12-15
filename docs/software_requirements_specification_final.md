@@ -20,8 +20,8 @@ This document will lay out the functional and non-functional requirements of the
 | :-------------: | :----------: |
 | FR6 | The car's seat material shall change to the selected option when a seat material button is clicked. |
 | FR7 | The car's rim finish shall changed to the selected option when a rim finish button is clicked. |
-| FR8 | The car's price shall changed accordignly when a seat material button is clicked. |
-| FR9 | The car's price shall changed accordignly when a rim finish button is clicked. |
+| FR8 | The car's price shall changed accordingly when a seat material button is clicked. |
+| FR9 | The car's price shall changed accordingly when a rim finish button is clicked. |
 | FR10 | The most recently selected seat material button will be dimly highlighted to show it is currently selected. |
 | FR11 | The most recently selected rims finish button will be dimly highlighted to show it is currently selected. |
 
@@ -47,7 +47,7 @@ This document will lay out the functional and non-functional requirements of the
 ### Test Drive Scene
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR23 | The Car shall be configured as it was in the Configuration scene. |
+| FR23 | The Car shall be configured as it was in the Configuration Scene. |
 | FR24 | The Car shall be driveable using the W/A/S/D controls. |
 | FR25 | The Car shall be driveable along a linear race track that consists of a road and landscape (grass, trees). |
 | FR26 | The Car shall play different kinds of audio for when it is idle and when it is accelerating. |
@@ -63,7 +63,7 @@ This document will lay out the functional and non-functional requirements of the
 | NFR2 | The Configurator shall be built and deployed either as an separate executable. |
 | NFR3 | The Configurator shall be launchable on any PC using the Windows OS that is compatible with the x86_64 architecture. |
 | NFR4 | The controls for the Configurator shall be accessible via keyboard and mouse. |
-| NFR5 | The Configurator's audio shall be playable on a speaker regardless of its configuration (mono/stereo). |
+| NFR5 | The Configurator's audio shall be playable on a speaker regardless of its configuration (Mono/Stereo). |
 | NFR6 | The Configurator's shall not require an Internet connection to be launched. |
 
 ### Performance Requirements
@@ -90,9 +90,9 @@ This document will lay out the functional and non-functional requirements of the
 | :-------------: | :----------: |
 | NFR18 | The Configurator's primary language shall be English (United States). |
 | NFR19 | The Configurator's currency shall be US Dollars. |
-| NFR20 | The Configurators built-in Unity Crash Handler shall serve the user in English (United States). |
+| NFR20 | The Configurator's built-in Unity Crash Handler shall serve the user in English (United States). |
 | NFR21 | The Configurator shall be executable regardless of system's system locale, so long as it supports UNICODE. |
-| NFR22 | If using a voice-assistant, the only available language for reading out the text shall be English. |
+| NFR22 | If using a voice-assistant, the available language for reading out the text shall be English. |
 
 ### Other Non-Functional Requirements
 | ID | Requirement |
