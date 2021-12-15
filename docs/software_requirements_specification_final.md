@@ -42,18 +42,17 @@ This document will lay out the functional and non-functional requirements of the
 | FR19 | The CarDataManager instance shall store the paint options, glossy value, seat material, and rims finish options. |
 | FR20 | The CarDataManager instance shall not be destroyed on scene change (Singleton). |
 | FR21 | The options stored in the CarDataManager shall be applied on the Car whenever a scene is changed to ensure that it looks visually correct. |
-| FR22 | The Checkout popup shall disappear when the user clicks on the red "X" on the popup. |
-| FR23 | The Purchase Confirmation popup shall disappear when the user clicks on the "Confirm" button. |
+| FR22 | The data shall not be persisted in different instances, with it being reset on a new instance of the software. |
 
 ### Test Drive Scene
 | ID | Requirement |
 | :-------------: | :----------: |
-| FR24 | The Car shall be configured as it was in the Configuration scene. |
-| FR25 | The Car shall be driveable using the W/A/S/D controls. |
-| FR26 | The Car shall be driveable along a linear race track that consists of a road and landscape (grass, trees). |
-| FR27 | The Car shall emit different kinds of audio for when it is idle and when it is accelerating. |
-| FR28 | The Camera following the Car can be placed in an alternate angle by pressing the "Left Alt" key. |
-| FR29 | The User shall be able to return to the Configuration Scene by pressing the "Esc" key. |
+| FR23 | The Car shall be configured as it was in the Configuration scene. |
+| FR24 | The Car shall be driveable using the W/A/S/D controls. |
+| FR25 | The Car shall be driveable along a linear race track that consists of a road and landscape (grass, trees). |
+| FR26 | The Car shall play different kinds of audio for when it is idle and when it is accelerating. |
+| FR27 | The Camera following the Car can be placed in an alternate angle by pressing the "Left Alt" key. |
+| FR28 | The User shall be able to return to the Configuration Scene by pressing the "Esc" key. |
 
 ## Non-Functional Requirements
 
@@ -64,7 +63,7 @@ This document will lay out the functional and non-functional requirements of the
 | NFR2 | The Configurator shall be built and deployed either as an separate executable. |
 | NFR3 | The Configurator shall be launchable on any PC using the Windows OS that is compatible with the x86_64 architecture. |
 | NFR4 | The controls for the Configurator shall be accessible via keyboard and mouse. |
-| NFR5 | The Configurator's audio shall be playable on a speaker regarldess of its configuration (mono/stereo). |
+| NFR5 | The Configurator's audio shall be playable on a speaker regardless of its configuration (mono/stereo). |
 | NFR6 | The Configurator's shall not require an Internet connection to be launched. |
 
 ### Performance Requirements
@@ -81,9 +80,9 @@ This document will lay out the functional and non-functional requirements of the
 | ID | Requirement |
 | :-------------: | :----------: |
 | NFR13 | The Configurator shall not access any data within the PC. |
-| NFR14 | The Configurator shall not collect any input data from user actions. |
-| NFR15 | The Configurator shall not collect any biometric data from user actions. |
-| NFR16 | The Configurator shall not collect any visual data from the user's webcam. |
+| NFR14 | The Configurator shall not collect and store any input data from user actions. |
+| NFR15 | The Configurator shall not collect and store any biometric data from user actions. |
+| NFR16 | The Configurator shall not collect and store any visual data from the user's webcam. |
 | NFR17 | In the mock purchase popup, the Configurator shall not collect any payments from the user. |
 
 ### Localization Requirements
@@ -102,7 +101,7 @@ This document will lay out the functional and non-functional requirements of the
 | NFR24 | The Configurator shall not use any trademarked vehicles or brands. |
 | NFR25 | The Configurator shall not use any trademarked assets (graphics/audio). |
 | NFR26 | The Configurator shall have UI that is easily understood and followable. |
-| NFR27 | The Configurator shall not exit until it is specifically requested, either by closing the window or pressing the "Esc" button. |
+| NFR27 | The Configurator shall not exit until it is specifically requested, either by closing the window or pressing the "Esc" button in the Configuration Scene. |
 
 # Change Management Plan
 Although the basic concepts of the software should be pretty straightforward, a certain level of knowledge transfer should be expected.
@@ -122,19 +121,46 @@ These traceability links will show proof of how different artifacts like Use Cas
 ## Use Case Diagram Traceability
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| UseCase1 | Move Player | FR5 |
+| 5 | Edit Color | FR1-5, 18-19 // NFR1, 7, 8, 14, 25 |
+| 5 | Update Graphics | FR1, 3, 6, 7, 21 // NFR1, 7-9, 25 |
+| 5 | Calculate Price | FR2, 8, 9, 14 // NFR1, 7-9, 17-19, 26 |
+| 5 | Update Price | FR2, 8, 9, 14 // NFR1, 7-9, 17-19, 26 |
+| 6 | Edit Material | FR6, 8, 10, 18-19 // NFR1, 7, 8, 14, 25|
+| 6 | Update Graphics | FR1, 3, 6, 7, 21 // NFR1, 7-9, 25 |
+| 6 | Calculate Price | FR2, 8, 9, 14 // NFR1, 7-9, 17-19, 26 |
+| 6 | Update Price | FR2, 8, 9, 14 // NFR1, 7-9, 17-19, 26 |
+| 7 | Drive around Circuit | FR23-28 // NFR1, 4, 7, 11, 14 |
+| 7 | Pause to examine Car | FR24, 28 // NFR1, 4, 7, 11 |
+| 7 | Return to Configuration Mode | FR18-22, 28 // NFR1, 4, 10, 26 |
+| 8 | Get Total Price | FR2, 8-9, 14, 19 // NFR1, 8 |
+| 8 | Show Purchase Confirmation Screen | FR12-17 // NFR1, 4, 17-19, 26 |
+| 8 | Confirm Purchase | FR15, 17 // NFR1, 4, 17-19, 26 |
 | … | … | … |
 
 ## Class Diagram Traceability
-| Artifact Name | Requirement ID |
-| :-------------: |:----------: |
-| classPlayer | NFR3, FR5 |
-| … | … | … |
+| Artifact ID | Artifact Name | Requirement ID |
+| :-------------: | :----------: | :----------: |
+| 4 | Scene | FR20-21, 23, 28 // NFR1-27 |
+| 4 | PriceManager | FR2, 8-9, 13-14,  // NFR8-9, 14, 18-19 |
+| 4 | CarDataManager | FR1, 6, 7, 13, 18-23 // NFR8-10, 18 |
+| 4 | CustomButton | FR1, 5, 8-11, 13-14, 18-19 // NFR8, 10, 14 |
+| 4 | PaintButton | FR1, 2, 5, 13-14, 18-19 // NFR8, 10, 14 |
+| 4 | RimButton | FR7, 9, 11, 13-14, 18-19 // NFR8, 10, 14 |
+| 4 | SeatButton | FR6, 8, 13-14, 18-19 // NFR8, 10, 14 |
 
 ## Activity Diagram Traceability
 | Artifact ID | Artifact Name | Requirement ID |
 | :-------------: | :----------: | :----------: |
-| <filename> | Handle Player Input | FR1-5, NFR2 |
-| … | … | … |
+| 1 | Edit Color of Car | FR1, 2, 5, 18, 19 // NFR1, 4, 8, 14, 25 |
+| 2 | Calculate Price | FR2, 8, 9, 14, 19 // NFR1, 7, 8, 19 |
+| 3 | Test Drive | FR21, 23-28, // NFR1, 4, 7, 10-12, 14, 26 |
 
 # Software Artifacts
+[1-ActivityDiagramEditColor](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
+[2-ActivityDiagramCalcPrice](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
+[3-ActivityDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
+[4-ClassDiagram](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ClassDiagram.png)
+[5-UseCaseDiagramCarPaint](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)
+[6-UseCaseDiagramSeatMat](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)
+[7-UseCaseDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)
+[8-UseCaseDiagramPurchaseCar](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)
