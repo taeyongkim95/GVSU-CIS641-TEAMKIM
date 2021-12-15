@@ -104,15 +104,15 @@ This document will lay out the functional and non-functional requirements of the
 | NFR27 | The Configurator shall not exit until it is specifically requested, either by closing the window or pressing the "Esc" button in the Configuration Scene. |
 
 # Change Management Plan
-Although the basic concepts of the software should be pretty straightforward, a certain level of knowledge transfer should be expected.
-For one, the intentions of the software should be clearly relayed. In no way is this software intended to actually sell or demonstrate an actual product for an actual company.
-This software is intended to serve as a technical demo for a possible solution that could be developed. 
-Certain websites could have configuration apps for their products that the user could spec out and choose to purchase and in this case the app would be built as a WebGL app.
-But because this is a desktop .exe app, it would only be presented and shown in a limited, private setting with the purpose of generating discourse.
-Because the basic controls and concepts of the app are simple, the more abstract controls (camera, driving) are displayed on a small Hud in the top-right corner.
-It is inferred that the user would already understand that clicking on the different option buttons (paint, seat, rims) would apply those options on the car that is before them.
-Additionally, because the file size of the app is considerably large (~82MB) and there are a lot of dependencies it needs to run within the "Car Configurator_Data" folder, it is recommended that it is shared as a compressed file. (.zip, .rar, .7z)
-Because the current build is intended for computers running the Windows OS, that is an important consideration to be made when trying to run it on a demo machine.
+Although the basic concepts of the software should be pretty straightforward, a certain level of knowledge transfer should be expected.\
+For one, the intentions of the software should be clearly relayed. In no way is this software intended to actually sell or demonstrate an actual product for an actual company.\
+This software is intended to serve as a technical demo for a possible solution that could be developed. \
+Certain websites could have configuration apps for their products that the user could spec out and choose to purchase and in this case the app would be built as a WebGL app.\
+But because this is a desktop .exe app, it would only be presented and shown in a limited, private setting with the purpose of generating discourse.\
+Because the basic controls and concepts of the app are simple, the more abstract controls (camera, driving) are displayed on a small Hud in the top-right corner.\
+It is inferred that the user would already understand that clicking on the different option buttons (paint, seat, rims) would apply those options on the car that is before them.\
+Additionally, because the file size of the app is considerably large (~82MB) and there are a lot of dependencies it needs to run within the "Car Configurator_Data" folder, it is recommended that it is shared as a compressed file. (.zip, .rar, .7z)\
+Because the current build is intended for computers running the Windows OS, that is an important consideration to be made when trying to run it on a demo machine.\
 If the app crashes, the in-built Unity Crash Handler is a good way to report it to the original developer. Or, you can always contact the developer directly with a detected issue.
 
 # Traceability Links
@@ -156,11 +156,11 @@ These traceability links will show proof of how different artifacts like Use Cas
 | 3 | Test Drive | FR21, 23-28, // NFR1, 4, 7, 10-12, 14, 26 |
 
 # Software Artifacts
-[1-ActivityDiagramEditColor](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
-[2-ActivityDiagramCalcPrice](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
-[3-ActivityDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)
-[4-ClassDiagram](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ClassDiagram.png)
-[5-UseCaseDiagramCarPaint](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)
-[6-UseCaseDiagramSeatMat](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)
-[7-UseCaseDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)
-[8-UseCaseDiagramPurchaseCar](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)
+[1-ActivityDiagramEditColor](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)\
+[2-ActivityDiagramCalcPrice](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)\
+[3-ActivityDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ActivityDiagrams.png)\
+[4-ClassDiagram](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/ClassDiagram.png)\
+[5-UseCaseDiagramCarPaint](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)\
+[6-UseCaseDiagramSeatMat](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram1%2C2.png)\
+[7-UseCaseDiagramTestDrive](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)\
+[8-UseCaseDiagramPurchaseCar](https://github.com/taeyongkim95/GVSU-CIS641-TEAMKIM/blob/master/artifacts/functional-models/UseCaseDiagram3%2C4.png)\
